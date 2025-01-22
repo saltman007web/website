@@ -6,7 +6,6 @@ import 'dart:io';
 
 import 'package:args/command_runner.dart';
 
-import '../utils.dart';
 
 final class ServeSiteCommand extends Command<int> {
   static const String _verboseFlag = 'verbose';

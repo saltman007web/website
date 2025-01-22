@@ -9,7 +9,6 @@ import 'package:args/command_runner.dart';
 import 'package:linkcheck/linkcheck.dart' as linkcheck show run;
 import 'package:path/path.dart' as path;
 
-import '../utils.dart';
 
 final class CheckLinksCommand extends Command<int> {
   static const String _externalFlag = 'external';

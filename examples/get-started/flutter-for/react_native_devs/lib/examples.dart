@@ -224,10 +224,8 @@ class _SharedPrefsExampleState extends State<SharedPrefsExample> {
   Future<void> updateCounter() async {
     final prefs = await SharedPreferences.getInstance();
     int? counter = prefs.getInt('counter');
-    if (counter is int) {
-      await prefs.setInt('counter', ++counter);
-    }
-    setState(() {
+    await prefs.setInt('counter', ++counter);
+      setState(() {
       _counter = counter;
     });
   }

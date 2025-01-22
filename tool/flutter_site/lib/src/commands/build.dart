@@ -6,7 +6,6 @@ import 'dart:io';
 
 import 'package:args/command_runner.dart';
 
-import '../utils.dart';
 
 final class BuildSiteCommand extends Command<int> {
   static const String _releaseFlag = 'release';
